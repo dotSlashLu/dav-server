@@ -1,0 +1,15 @@
+[package]
+name = "dav"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dav-server = { version = "0.7.0", features=["actix-compat"] }
+actix-web = "4"
+env_logger = "0.11.5"
+actix-web-httpauth = "0.8.2"
+derive_more = { version = "1.0.0", features=["full"] }
+log = "0.4.22"
+clap = { version = "=4.4", features=["derive"] }
+base64 = "0.22.1"
+http = "1.1.0"
